@@ -1,5 +1,4 @@
-echo "Amass installer running..." && um install epel-release && yum install snapd && systemctl enable --now snapd.socket &&\
-ln -s /var/lib/snapd/snap /snap && snap install amass && echo "Amass install Success!" && export amass="/var/lib/snapd/snap/bin/amass" \
+echo "Amass installer running..." &&  snap install amass && echo "Amass install Success!" && export amass="/var/lib/snapd/snap/bin/amass" \
 export amass="/var/lib/snapd/snap/bin/amass" && echo "Amass PATH Success!"
 
 echo "SubFinder installer running..." && wget "https://github.com/projectdiscovery/subfinder/releases/download/v2.4.5/subfinder_2.4.5_linux_amd64.tar.gz"\
